@@ -76,7 +76,7 @@ nav {
   margin-top: 60px;
   margin-bottom: 30px;
   color: rgb(142, 142, 7);
-  font-size: 20px;
+  font-size: 30px;
 }
 
 #cheeze{
@@ -97,11 +97,10 @@ nav {
   font-weight: bold;
   margin: 60px 0 30px 0;  
 }
-
-.course_h2{
-  margin: 60px 40px 40px -90px;
-  font-weight: bold;
+.course-content-block{
+  
 }
+
 .course_reverse{
   display:flex;
   justify-content: space-between;
@@ -122,14 +121,22 @@ nav {
 }
 
 .course-content{ 
-  height: 328px;
-  width: 50%;
+  height: 30%;
+  width: 40%;
+  
 } 
+.course_h2{
+  /* margin: 60px 40px 40px -90px; */
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 30px;
+}
 
 .course_p{
-  margin: 20px 40px 20px;
+  /* margin: 20px 40px 20px;
   width: 400px;
-  height: 100px;
+  height: 100px; */
+  text-align: left;
 }
 
 /* news */
@@ -153,6 +160,18 @@ nav {
   padding: 10px;
   box-sizing: border-box;
   text-align: center;
+	transition: .3s;
+}
+.box:hover {
+	box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+	transform: translateY(-4px);
+}
+.box img{
+  width: 100%;
+}
+
+.box_p{
+  text-align: justify;
 }
 /* ボタン */
 /* 意味は理解していない */
@@ -176,8 +195,8 @@ nav {
 			margin: 20px;
 			cursor: pointer;
 		}
-    .btn hover{
-      opacity: 0.1;
+    .btn:hover{
+      opacity: 0.6;
       color: #fff;
     }
     /* 意味は理解していない↑ */
@@ -245,6 +264,7 @@ nav {
   } 
   .contact-body {
     width: 70%;
+    text-align: left;
   }
 
   /* フォーム右側 */
@@ -305,10 +325,13 @@ nav {
       height: 40px;
       display: flex;
       align-items: center;
-      justify-content: center;      
+      justify-content: center; 
+      cursor: pointer;     
     }
 
-
+    .submit:hover{
+      opacity: 0.6;
+    }
 
 
     /* フッター */
